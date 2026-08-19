@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect | Social feed</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand-area">
+        <a class="brand" href="#" aria-label="Connect home">connect<span>+</span></a>
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Search Connect" />
+        </label>
+      </div>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <button class="nav-icon active" data-view="home" title="Home">⌂</button>
+        <button class="nav-icon" data-view="friends" title="Friends">♧</button>
+        <button class="nav-icon" data-view="watch" title="Watch">▶</button>
+        <button class="nav-icon" data-view="marketplace" title="Marketplace">⌑</button>
+      </nav>
+      <div class="account-area">
+        <button class="avatar avatar-small" aria-label="Open profile">NL</button>
+        <button class="icon-button" title="Menu">☷</button>
+        <button class="icon-button" title="Messages">✉</button>
+        <button class="icon-button notification-button" title="Notifications">♢<i></i></button>
+      </div>
+    </header>
+
+    <main class="app-layout">
+      <aside class="left-sidebar">
+        <div class="profile-row"><span class="avatar">NL</span><strong>Nisha Larson</strong></div>
+        <button class="side-link active"><span>⌂</span> Feed</button>
+        <button class="side-link"><span>♧</span> Friends <b>12</b></button>
+        <button class="side-link"><span>◉</span> Groups</button>
+        <button class="side-link"><span>▣</span> Saved</button>
+        <button class="side-link"><span>▤</span> Events</button>
+        <div class="sidebar-divider"></div>
+        <p class="sidebar-label">Your shortcuts</p>
+        <button class="shortcut"><span class="shortcut-image design"></span> Product Design Club</button>
+        <button class="shortcut"><span class="shortcut-image travel"></span> Weekend Explorers</button>
+        <button class="shortcut"><span class="shortcut-image music"></span> The Listening Room</button>
+        <button class="shortcut"><span class="shortcut-image food"></span> Good Food Society</button>
+        <p class="sidebar-footer">Privacy · Terms · Advertising · Cookies · More<br />Connect © 2025</p>
+      </aside>
+
+      <section class="feed-column">
+        <div class="page-heading">
+          <div><p class="eyebrow">TUESDAY, APRIL 22</p><h1>Your feed</h1></div>
+          <button class="ghost-button" id="filterButton">Latest <span>⌄</span></button>
+        </div>
+
+        <section class="stories panel" aria-label="Stories">
+          <article class="story create-story">
+            <div class="story-image create-image"><span class="create-plus">+</span></div>
+            <strong>Create story</strong>
+          </article>
+          <article class="story"><div class="story-image story-one"><span class="story-avatar">JD</span></div><strong>Jordan Davis</strong></article>
+          <article class="story"><div class="story-image story-two"><span class="story-avatar">MC</span></div><strong>Marcus Chen</strong></article>
+          <article class="story"><div class="story-image story-three"><span class="story-avatar">SK</span></div><strong>Sofia Kim</strong></article>
+          <article class="story"><div class="story-image story-four"><span class="story-avatar">AP</span></div><strong>Amelia Park</strong></article>
+        </section>
+
+        <section class="composer panel">
+          <div class="composer-top"><span class="avatar">NL</span><button class="composer-prompt" id="composerPrompt">What’s on your mind, Nisha?</button></div>
+          <div class="composer-actions"><button data-compose="Photo/video"><span class="action-icon photo">▧</span> Photo/video</button><button data-compose="Feeling/activity"><span class="action-icon feeling">☺</span> Feeling/activity</button><button data-compose="Live video"><span class="action-icon live">●</span> Live video</button></div>
+        </section>
+
+        <div id="posts" class="posts">
+          <article class="post panel" data-search="jordan davis bloom studio workspace creative">
+            <div class="post-header"><span class="avatar portrait-jordan"></span><div><strong>Jordan Davis</strong><p>2 hr · <span>◉</span></p></div><button class="more-button" title="More options">···</button></div>
+            <p class="post-copy">A little corner of the studio, a lot of sunlight, and the first sketches for something new. Feeling grateful for creative mornings. ✨</p>
+            <div class="post-image studio-image"><span class="image-caption">BLOOM<br /><small>studio notes</small></span></div>
+            <div class="engagement"><span>♥</span> 128 <span class="comment-count">24 comments</span></div>
+            <div class="post-actions"><button class="like-button"><span>♡</span> Like</button><button class="comment-button"><span>◌</span> Comment</button><button><span>↗</span> Share</button></div>
+            <div class="comment-box"><span class="avatar avatar-tiny">NL</span><input placeholder="Write a comment..." /><button class="send-comment">↗</button></div>
+          </article>
+
+          <article class="post panel" data-search="marcus chen trail mountain weekend explorers">
+            <div class="post-header"><span class="avatar portrait-marcus"></span><div><strong>Marcus Chen</strong><p>Yesterday · <span>◉</span></p></div><button class="more-button" title="More options">···</button></div>
+            <p class="post-copy">Found this view at the end of the trail. Worth every step. What’s the best place you’ve wandered into lately?</p>
+            <div class="post-image mountain-image"></div>
+            <div class="engagement"><span>♥</span> 84 <span class="comment-count">9 comments</span></div>
+            <div class="post-actions"><button class="like-button"><span>♡</span> Like</button><button class="comment-button"><span>◌</span> Comment</button><button><span>↗</span> Share</button></div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="right-sidebar">
+        <section class="side-section"><div class="section-title"><h2>Birthdays</h2><button>···</button></div><div class="birthday"><span class="gift">♧</span><p><strong>Elena Garcia</strong> has a birthday today.</p></div></section>
+        <section class="side-section contacts"><div class="section-title"><h2>Contacts</h2><div><button title="Search contacts">⌕</button><button>···</button></div></div><div class="contact"><span class="online-avatar avatar portrait-jordan"></span><span>Jordan Davis</span><i></i></div><div class="contact"><span class="online-avatar avatar portrait-sofia"></span><span>Sofia Kim</span><i></i></div><div class="contact"><span class="online-avatar avatar portrait-amelia"></span><span>Amelia Park</span><i></i></div><div class="contact"><span class="online-avatar avatar portrait-marcus"></span><span>Marcus Chen</span></div></section>
+        <section class="side-section sponsored"><div class="section-title"><h2>Sponsored</h2><button>···</button></div><div class="sponsored-item"><div class="sponsor-image coffee-image"></div><div><strong>Take a slow morning</strong><p>New seasonal blends from Field Notes Coffee</p><small>fieldnotes.coffee</small></div></div><div class="sponsored-item"><div class="sponsor-image plant-image"></div><div><strong>Make room for green</strong><p>Plants that make your space feel like home</p><small>leafandloft.com</small></div></div></section>
+      </aside>
+    </main>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
